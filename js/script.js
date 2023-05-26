@@ -26,9 +26,7 @@ document.querySelector('.form').addEventListener('submit', (e) => {
         
         let name = document.querySelector(`input[name=${index}]`).getAttribute('data-name');
         
-        
         htmlPopup += `<p>${name}: <span>${value}</span><p>`;
-    
         
         formDataObject[index] = value;
     });
