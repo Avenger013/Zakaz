@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы фирмы разработки ПО</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-body">
+                <p class="header-logo">• Фирма разработки ПО •</p>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <h1 class="main-title">Оформление заказа<span>Заполните контактные данные и данные о заказе</span></h1>
+            <div class="main-form">
+                <form class="form" action="#">
+                    <label>
+                        <p>Ваше имя</p>
+                        <input type="text" name="name" placeholder="Иванов Иван Иванович" data-name="Имя">
+                    </label>
+                    <label>
+                        <p>Телефон</p>
+                        <input type="text" name="phone" placeholder="+7 (999) 999-99-99" data-name="Телефон">
+                    </label>
+                    <label>
+                        <p>Менеджер, принявший заказ</p>
+                        <input type="text" name="manager" placeholder="Иванов И.И." data-name="Менеджер" readonly class="dropdown-input">
+                        <div class="dropdown">
+                            <p>Менеджер 1. Иванов И.И.</p>
+                            <p>Менеджер 2. Иванов И.И.</p>
+                            <p>Менеджер 3. Иванов И.И.</p>
+                            <p>Менеджер 4. Иванов И.И.</p>
+                        </div>
+                    </label>
+                    <label>
+                        <p>Какой вид ПО вам нужен?</p>
+                        <div class="select">
+                            <p>веб-сайт</p>
+                            <p>мобильное приложение</p>
+                            <p>игра</p>
+                            <p>ПО для бизнеса (CRM)</p>
+                            <p>чат-бот</p>
+                        </div>
+                        <input type="text" name="type" data-name="Вид ПО">
+                    </label>
+                    <label>
+                        <p>Нужна иностранная версия ПО?</p>
+                        <input type="checkbox" name="lang" data-name="Нужна иностранная версия ПО">
+                        <div class="checkbox"></div>
+                    </label>
+                    <label>
+                        <p>Есть ли готовый дизайн ПО?</p>
+                        <input type="checkbox" name="design" data-name="Есть готовый дизайн ПО">
+                        <div class="checkbox"></div>
+                    </label>
+                    <button>Сформировать заказ →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body">
+                <p class="footer-copyright">© Рафиев Рустам Хадиятулович, ПИ001, 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup">
+        <div class="popup-bg"></div>
+        <div class="popup-wrapper">
+            <div class="popup-close">×</div>
+            <h2 class="popup-title">Подтвердите ваш заказ</h2>
+            <div class="popup-body"></div>
+            <div class="popup-btn">Подтвердить</div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
